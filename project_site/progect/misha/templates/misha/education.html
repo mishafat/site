@@ -1,0 +1,17 @@
+{% extends 'main/base.html'%}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'misha/css/style.css' %}">
+{% endblock %}
+
+{% block header %}
+<h1>Михайло</h1>
+{% endblock %}
+
+{% block main %}
+<p id="MishaEducation">
+    Я навчаюсь у СШ №115, почав навчання з 6-ти років.
+</p>
+<img id="MishaSchool" src="https://school115.kyiv.ua/wp-content/uploads/2020/08/n0Cgp.jpg" alt="">
+{% endblock %}

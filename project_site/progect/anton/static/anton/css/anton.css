@@ -1,0 +1,39 @@
+#imgSchool89{
+    width: 20%;
+    /* display: block; */
+
+    margin-left: 5%;
+}
+
+p{
+    font-size: 25px;
+}
+
+#AntonSchool{
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+#FKRKM{
+    width: 20%;
+    margin-left: 5%;
+}
+
+.AntonRef{
+    font-size: 25px;
+}
+
+.programmingPictures{
+    margin-left: 5%;
+}
+
+
+.hobbyPictures{
+    width: 13%;
+    margin-left: 5%;
+}
+
+#AntonFriends{
+    width: 20%;
+    margin-left: 5%;
+}

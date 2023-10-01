@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'andrey/css/style.css' %}">
+{% endblock %}
+
+{% block header %}
+<h1>Андрій</h1>
+{% endblock %}
+
+{% block main %}    
+    <h1>Дозвілля</h1>
+    <div class="content">
+        <p>&nbsp &nbsp У вільний час, як і будь який хлопчик мого віку, я полюбляю пограти. Але ігри для мене не мтільки цікаві як хобі, як спосіб зкоротати час, а скоріш як натхнення, цілий каталог можливого функціоналу, що можливо примінити в своїх проектах.</p>
+        <p>&nbsp &nbspТакож іноді і гуляю, хоча і дуже рідко.</p>
+        <p>&nbsp &nbsp</p>
+    </div>
+    <div class="additionalInfo">
+    </div>
+{% endblock %}
+
+{% block foother %}
+    <div class='foot'>
+        <a href="{% url 'andrey_education' %}">Освіта</a>
+        <a href="{% url 'andrey_programming' %}">Досягнення в програмуванні</a>
+        <a href="{% url 'andrey_hobbies' %}">Хоббі</a>
+        {% comment %} <a href="{% url 'andrey_freetime' %}">Дозвілля</a> {% endcomment %}
+    </div>
+{% endblock foother %}

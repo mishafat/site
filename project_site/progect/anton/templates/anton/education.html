@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'anton/css/anton.css' %}">
+{% endblock %}
+
+{% block header %}
+<h1>Антон</h1>
+{% endblock %}
+
+{% block main %}
+    <p id="AntonSchool">Я навчався у КЗО "СЗШ №89" ДМР.</p>
+
+    <img id="imgSchool89" src="{% static 'anton/img/school89.jpg' %}" alt="">
+
+    <p>
+        У цьому навчальному закладі почав навчання з 5 повних років, з 1 класу у 2014 році. Закінчив навчання у цьому
+        навчальному закладі у 9 класі у віці 14 років у 2023 році та здобув свідоцтво про здобуття базової середньої освіти з відзнакою. 
+    </p>
+
+    <p>
+        Після школи вступив до ФКРКМ у місті Дніпро. Поступив на бюджет на 1 курс за спеціальністю 121 "Інженерія програмного забезпечення".
+    </p>
+
+    <img id="FKRKM" src="{% static 'anton/img/fkrkm.jpg' %}" alt="">
+
+{% endblock %}

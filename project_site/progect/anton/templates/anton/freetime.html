@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'anton/css/anton.css' %}">
+{% endblock %}
+
+{% block header %}
+<h1>Антон</h1>
+{% endblock %}
+
+{% block main %}
+
+<p>
+    У час, коли я зробив всі важливі справи, я можу розслабитися та зробити щось корисне для себе. Я віддаю перевагу читанню книжок та
+    програмуванню. Також я можу зіграти декілька партій у шахи. Також я можу з друзями зібратись в онлайн-дзвінку і поговорити про щось,
+    подивитися серіали, фільми.
+</p>
+<img id="AntonFriends" src="{% static 'anton/img/AntonFriends.jpg' %}" alt="">
+{% endblock %}

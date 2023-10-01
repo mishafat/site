@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link %}
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+{% endblock %}
+
+{% block main %}
+<div class="column">
+    <p>Антон Примуш</p>
+    <a href="{% url 'anton_education' %}">Освіта</a>
+    <a href="{% url 'anton_programming' %}">Досягнення в програмуванні</a>
+    <a href="{% url 'anton_hobbies' %}">Хоббі</a>
+    <a href="{% url 'anton_freetime' %}">Дозвілля</a>
+</div>
+
+
+<div class="column">
+    
+    <p>Андрій Дружга</p>
+    <a href="{% url 'andrey_education' %}">Освіта</a>
+    <a href="{% url 'andrey_programming' %}">Досягнення в програмуванні</a>
+    <a href="{% url 'andrey_hobbies' %}">Хоббі</a>
+    <a href="{% url 'andrey_freetime' %}">Дозвілля</a>
+</div>
+
+
+<div class="column">
+    <p>Ярослав Самчук</p>
+    <a href="{% url 'yaroslav_education' %}">Освіта</a>
+    <a href="{% url 'yaroslav_achievement' %}">Досягнення в програмуванні</a>
+    <a href="{% url 'yaroslav_hobby' %}">Хоббі</a>
+    <a href="{% url 'yaroslav_leisure' %}">Дозвілля</a>
+</div>
+
+
+
+<div class="column">
+    <p>Михайло Фатуєв</p>
+    <a href="{% url 'misha_education' %}">Освіта</a>
+    <a href="{% url 'misha_program' %}">Досягнення в програмуванні</a>
+    <a href="{% url 'misha_hobbies' %}">Хоббі</a>
+    <a href="{% url 'misha_leisure' %}">Дозвілля</a>
+</div>
+
+<script defer>
+    let a = document.querySelector('.mainPage')
+    a.remove()
+</script>
+{% endblock %}

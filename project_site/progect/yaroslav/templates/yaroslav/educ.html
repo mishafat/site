@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block links %}
+{% endblock %}
+
+{% block header %}
+<h1>Ярослав</h1>
+{% endblock %}
+
+{% block main %}
+<!-- <div id="div_h1">
+    <h1>Yaroslav Освіта</h1>
+</div> -->
+<div id="div2">
+    Навчальний заклад
+    <img width="300px" src="https://www.rbc.ua/static/img/f/a/facebook_com_intellect_kyiv_480x270.jpg" alt="School">
+</div>
+<div id="div3">
+    Курс програмування
+    <img width="300px" src="{% static 'yaroslav/img/pythonDjango.png' %}" alt="Django">
+</div>
+{% endblock %}

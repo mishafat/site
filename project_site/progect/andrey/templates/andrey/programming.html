@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'andrey/css/style.css' %}">
+{% endblock %}
+
+{% block header %}
+<h1>Андрій</h1>
+{% endblock %}
+
+{% block main %}    
+    <h1>Досвід в программуванні</h1>
+    <div class="content">
+        <p>&nbsp &nbsp Вже на протязі 3 років я досконально вивчаю мову програмування Python, котра дала мені базове розуміня синтаксису багатьох мов прорграмування, а також багато можливостей по створенню програм для своїх потреб. Навіть зараз цей фреймворк та сайт працюе на Python, котрий ми настроювали з командою.</p>
+        <p>&nbsp &nbsp Крім цього я вже добре знаю js, котрий також є мовою программування. Також, немов би в наборі я вивчив html та css, що є обов'язковою складвою будь якого сайту.</p>
+        <p>&nbsp &nbsp Також я вже не раз працював з ігровими рушіями, такими як Godot та Unity.</p>
+    </div>
+    <div class="additionalInfo">
+        <img src="{% static 'andrey/img/Godot_logo.svg' %}">
+        <img src="{% static 'andrey/img/unity.jpg' %}">
+    </div>
+{% endblock %}
+
+{% block foother %}
+    <div class='foot'>
+        <a href="{% url 'andrey_education' %}">Освіта</a>
+        {% comment %} <a href="{% url 'andrey_programming' %}">Досягнення в програмуванні</a> {% endcomment %}
+        <a href="{% url 'andrey_hobbies' %}">Хоббі</a>
+        <a href="{% url 'andrey_freetime' %}">Дозвілля</a>
+    </div>
+{% endblock foother %}

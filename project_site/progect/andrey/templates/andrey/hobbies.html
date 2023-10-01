@@ -1,0 +1,30 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block link %}
+    <link rel="stylesheet" href="{% static 'andrey/css/style.css' %}">
+{% endblock %}
+
+{% block header %}
+<h1>Андрій</h1>
+{% endblock %}
+
+{% block main %}    
+    <h1>Хобі</h1>
+    <div class="content">
+        <p>&nbsp &nbspМоїм улюбленнішим хобі я вважаю програмування, для мене це є досить цікаво. Кожен раз це новий виклик з котрим треба замешкатись, щоб отримати результат, кожен раз є десятки допрацювань та кожен раз ти все більше знаєш, та все одно цього мало.</p>
+        <p>&nbsp &nbspТакож моїм хоббі я вважаю спорт. Я бігун на короткі дистанції, займаюмь в школі олімпійського резерву.</p>
+    </div>
+    <div class="additionalInfo">
+        <img src="{% static 'andrey/img/programmWork.jpg' %}">
+    </div>
+{% endblock %}
+
+{% block foother %}
+    <div class='foot'>
+        <a href="{% url 'andrey_education' %}">Освіта</a>
+        <a href="{% url 'andrey_programming' %}">Досягнення в програмуванні</a>
+        {% comment %} <a href="{% url 'andrey_hobbies' %}">Хоббі</a> {% endcomment %}
+        <a href="{% url 'andrey_freetime' %}">Дозвілля</a>
+    </div>
+{% endblock foother %}

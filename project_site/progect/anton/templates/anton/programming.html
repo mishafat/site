@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" href="{% static 'anton/css/anton.css' %}">
+{% endblock %}
+
+{% block header %}
+<h1>Антон</h1>
+{% endblock %}
+
+{% block main %}
+<p>
+    Навчався на курсі Logika 2 роки, отримав диплом від WorldIt. Ознайомитися з моїм дипломом можна
+    за <a class="AntonRef" href="https://www.worldit.academy/certificate/validation/45">посиланням</a>. 
+
+</p>
+
+<img class="programmingPictures" src="{% static 'anton/img/worlditDiploma.png' %}" alt="">
+
+<p>
+    За посиланням можна ознайомитися з моїми досягненнями у навчанні,
+    професійні вміння, програмним забезпеченням, яким я вмію користуватися. 
+    
+</p>
+
+<p>
+    Також під час навчання на курсах Logika я створював різні проекти в командах.
+    Команди, в яких я був, створили 2д ігру-платформер, музикальний плеєр, графічний редактор, генератор Qr-кодів. Для ознайомлення з проектами,
+    в розробці яких я приймав участь можна у моєму github акаунті. На нього ви можете перейти за  
+    <a class="AntonRef" href="https://github.com/PrymushAnton">посиланням</a>.
+</p>
+
+<img class="programmingPictures" src="{% static 'anton/img/githubAnton.png' %}" alt="">
+
+{% endblock %}

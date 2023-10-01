@@ -1,0 +1,28 @@
+p{
+    font-size: 25px;
+}
+
+#MishaEducation{
+    font-size: 25px;
+    margin-left: 2%;
+}
+
+#MishaSchool{
+    width: 30%;
+    margin-left: 5%;
+}
+
+#MishaProgramming{
+    width: 30%;
+    margin-left: 3%;
+}
+
+#MishaHobby{
+    width: 15%;
+    margin-left: 5%;
+}
+
+#MishaLeisure{
+    width: 20%;
+    margin-left: 5%;
+}
